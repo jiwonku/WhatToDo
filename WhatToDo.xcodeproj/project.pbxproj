@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B1CB63932CD8D34F0008F927 /* StoryBoarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CB63922CD8D34F0008F927 /* StoryBoarded.swift */; };
+		B1D080562CD8DECC00033A79 /* ToDoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1D080552CD8DECC00033A79 /* ToDoCell.xib */; };
+		B1D080582CD8E13800033A79 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D080572CD8E13800033A79 /* ToDoCell.swift */; };
 		B1F1FB532CD491210009F666 /* WhatToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1FB522CD491210009F666 /* WhatToDoApp.swift */; };
 		B1F1FB552CD491210009F666 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1FB542CD491210009F666 /* ContentView.swift */; };
 		B1F1FB572CD491220009F666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F1FB562CD491220009F666 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		B1CB63922CD8D34F0008F927 /* StoryBoarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoarded.swift; sourceTree = "<group>"; };
+		B1D080552CD8DECC00033A79 /* ToDoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoCell.xib; sourceTree = "<group>"; };
+		B1D080572CD8E13800033A79 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		B1F1FB4F2CD491210009F666 /* WhatToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F1FB522CD491210009F666 /* WhatToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToDoApp.swift; sourceTree = "<group>"; };
 		B1F1FB542CD491210009F666 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,8 +141,10 @@
 		B1F1FB7C2CD491DE0009F666 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				B1F1FB7D2CD491FB0009F666 /* MainViewController.storyboard */,
 				B1F1FB7F2CD492180009F666 /* MainViewController.swift */,
+				B1F1FB7D2CD491FB0009F666 /* MainViewController.storyboard */,
+				B1D080572CD8E13800033A79 /* ToDoCell.swift */,
+				B1D080552CD8DECC00033A79 /* ToDoCell.xib */,
 				B1CB63922CD8D34F0008F927 /* StoryBoarded.swift */,
 			);
 			path = UIKit;
@@ -251,6 +257,7 @@
 				B1F1FB5A2CD491220009F666 /* Preview Assets.xcassets in Resources */,
 				B1F1FB7E2CD491FB0009F666 /* MainViewController.storyboard in Resources */,
 				B1F1FB572CD491220009F666 /* Assets.xcassets in Resources */,
+				B1D080562CD8DECC00033A79 /* ToDoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +286,7 @@
 				B1F1FB552CD491210009F666 /* ContentView.swift in Sources */,
 				B1F1FB532CD491210009F666 /* WhatToDoApp.swift in Sources */,
 				B1CB63932CD8D34F0008F927 /* StoryBoarded.swift in Sources */,
+				B1D080582CD8E13800033A79 /* ToDoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

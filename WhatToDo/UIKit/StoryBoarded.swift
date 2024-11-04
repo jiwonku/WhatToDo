@@ -44,3 +44,31 @@ extension StoryBoarded {
         return viewController
     }
 }
+
+
+
+/// Nibbed프로토콜을 채택하면 uinib라는 변수를 가지고 있게 된다.
+protocol Nibbed {
+    static var uinib: UINib { get }
+}
+
+extension Nibbed {
+    static var uinib: UINib {
+        return UINib(nibName: String(describing: Self.self), bundle: nil)
+    }
+}
+
+/// ReuseIdnetifiale프로토콜을 채택하면 reuseIdentifier라는 변수를 가지고 있게 된다.
+protocol ReuseIdnetifiale {
+    static var reuseIdentifier: String { get }
+}
+
+extension ReuseIdnetifiale {
+    static var reuseIdentifier: String {
+        return String(describing: Self.self)
+    }
+}
+
+extension UITableViewCell : Nibbed { }
+extension UITableViewCell : ReuseIdnetifiale { }
+

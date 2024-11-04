@@ -11,11 +11,33 @@ import SwiftUI
 
 class MainViewController : UIViewController {
     
+    @IBOutlet weak var myTableView: UITableView!
+    
+    var dummyDataList = ["aaaaaa", "bbbbbb", "cccccc"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(#fileID, #function, #line, "- ")
         self.view.backgroundColor = .systemYellow
+        
+        self.myTableView.register(ToDoCell.uinib, forCellReuseIdentifier: ToDoCell.reuseIdentifier)
+        self.myTableView.dataSource = self
     }
+}
+
+extension MainViewController : UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dummyDataList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ToDoCell.reuseIdentifier, for: indexPath) as? ToDoCell else {
+            return UITableViewCell()
+        }
+        
+        return cell
+    }
+    
 }
 
 
